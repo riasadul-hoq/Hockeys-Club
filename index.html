@@ -28,7 +28,11 @@
           extend: {
             colors: {
               "primary-color": "#FF4240",
-              "carousel-btn-bg-color": "#131318",
+              "text-color": "#131318",
+              "stat-default-border": "#E7E7E8",
+              green: "#49D293",
+              yellow: "#FFB546",
+              blue: "#4C8DF1",
             },
           },
         },
@@ -38,13 +42,16 @@
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
+      /* .border-custom-color {
+        border-color: rgba(19, 19, 24, 0.2);
+      } */
     </style>
   </head>
   <body class="font-manrope">
     <!-- Header Section Starts Here -->
-    <header class="px-5 md:px-10 lg:px-0 container mx-auto">
+    <header class="container mx-auto">
       <!-- Carousel Section Starts Here -->
-      <section class="carousel">
+      <section class="carousel px-5 md:px-10 lg:px-0">
         <div class="mt-16 carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./images/1.png" class="w-full" />
@@ -87,5 +94,102 @@
       <!-- Carousel Section Ends Here -->
     </header>
     <!-- Header Section Ends Here -->
+
+    <!-- Main Section Starts Here -->
+    <main class="container mx-auto">
+      <!-- Hockeys Club Facilities Section Starts Here -->
+      <section class="facilities my-10 md:my-28 lg:my-28">
+        <div
+          class="facilities-text py-6 md:py-8 lg:py-8 text-center border-dashed border-y-[1px] border-text-color border-opacity-20"
+        >
+          <h1
+            class="text-xl md:text-4xl lg:text-4xl font-extrabold text-text-color my-4 md:my-6 lg:my-6"
+          >
+            Professional Hockeys Club
+          </h1>
+          <p
+            class="text-sm md:text-base lg:text-base font-medium text-text-color text-opacity-60"
+          >
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat <br />
+            Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div
+          class="facilities-stat-container mt-6 md:mt-12 lg:mt-24 flex flex-col md:flex-col lg:flex-row gap-y-6 justify-evenly"
+        >
+          <div class="player-facility text-center">
+            <div
+              class="radial-progress text-primary-color text-2xl font-extrabold ring-stat-default-border ring-inset ring-[12px]"
+              style="--value: 87; --size: 7rem; --thickness: 0.75rem"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <div class="player-text">
+              <h5 class="text-xl font-semibold text-text-color my-6">
+                Player Facility
+              </h5>
+              <p class="text-base font-normal text-text-color text-opacity-60">
+                Amet consectetur. Condimentum <br />dignissim adipiscing.
+              </p>
+            </div>
+          </div>
+          <div class="coach text-center">
+            <div
+              class="radial-progress text-green text-2xl font-extrabold ring-stat-default-border ring-inset ring-[12px]"
+              style="--value: 95; --size: 7rem; --thickness: 0.75rem"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <div class="coach-text">
+              <h5 class="text-xl font-semibold text-text-color my-6">
+                Experienced Coach
+              </h5>
+              <p class="text-base font-normal text-text-color text-opacity-60">
+                Amet consectetur. Condimentum <br />dignissim adipiscing.
+              </p>
+            </div>
+          </div>
+          <div class="senior-player text-center">
+            <div
+              class="radial-progress text-yellow text-2xl font-extrabold ring-stat-default-border ring-inset ring-[12px]"
+              style="--value: 90; --size: 7rem; --thickness: 0.75rem"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <div class="senior-player-text">
+              <h5 class="text-xl font-semibold text-text-color my-6">
+                Senior Player
+              </h5>
+              <p class="text-base font-normal text-text-color text-opacity-60">
+                Amet consectetur. Condimentum <br />dignissim adipiscing.
+              </p>
+            </div>
+          </div>
+          <div class="ground text-center">
+            <div
+              class="radial-progress text-blue text-2xl font-extrabold ring-stat-default-border ring-inset ring-[12px]"
+              style="--value: 80; --size: 7rem; --thickness: 0.75rem"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <div class="ground-text">
+              <h5 class="text-xl font-semibold text-text-color my-6">
+                Training Ground
+              </h5>
+              <p class="text-base font-normal text-text-color text-opacity-60">
+                Amet consectetur. Condimentum <br />dignissim adipiscing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hockeys Club Facilities Section Ends Here -->
+    </main>
+    <!-- Main Section Ends Here -->
   </body>
 </html>
